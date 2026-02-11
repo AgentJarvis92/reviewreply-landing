@@ -136,6 +136,24 @@
             background: radial-gradient(circle, rgba(255,204,128,0.4) 0%, rgba(255,255,255,0) 70%);
         }
 
+        /* Mobile responsiveness */
+        @media (max-width: 640px) {
+            .btn-primary {
+                padding: 16px 32px;
+                font-size: 1rem;
+                min-height: 48px;
+                width: 100%;
+                text-align: center;
+            }
+            section {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+            .glass-card:hover {
+                transform: none;
+            }
+        }
+
     </style>
 </head>
 <body class="text-brand-text" vid="11">
@@ -170,12 +188,12 @@
                     <span class="text-brand-orange font-bold tracking-widest uppercase text-xs font-display" vid="24">Restaurant AI Intelligence</span>
                 </div>
                 
-                <h1 class="text-6xl md:text-8xl leading-[0.85] text-gray-900 tracking-tighter font-black" vid="25">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl leading-[0.9] text-gray-900 tracking-tighter font-black" vid="25">
                     Never worry about <br vid="26">
                     <span class="orange-highlight text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-yellow-500" vid="27">review responses</span> again.
                 </h1>
                 
-                <p class="text-xl text-gray-600 text-body max-w-lg font-light border-l border-gray-200 pl-6" vid="28">
+                <p class="text-lg sm:text-xl text-gray-600 text-body max-w-lg font-light border-l border-gray-200 pl-6" vid="28">
                     AI that drafts responses, texts you for approval, and sends you weekly intelligence on your competitors.
                 </p>
                 
@@ -195,7 +213,7 @@
             <div class="relative flex justify-center lg:justify-end" vid="34">
                 
                 
-                <div class="relative w-[500px] h-[500px] rounded-full bg-gradient-to-br from-brand-lime to-white flex items-center justify-center border border-brand-lemon/30 z-10 shadow-glow" vid="35">
+                <div class="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full bg-gradient-to-br from-brand-lime to-white flex items-center justify-center border border-brand-lemon/30 z-10 shadow-glow" vid="35">
                     
                     
                     <div class="absolute inset-8 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white" vid="36">
@@ -205,9 +223,9 @@
                     </div>
                     
                     
-                    <div class="relative w-[240px] bg-white rounded-[2.5rem] shadow-2xl border-[6px] border-gray-900 overflow-hidden transform rotate-[-3deg] hover:rotate-0 transition-transform duration-500 ml-10" vid="39">
+                    <div class="relative w-[180px] sm:w-[220px] lg:w-[240px] bg-white rounded-[2.5rem] shadow-2xl border-[6px] border-gray-900 overflow-hidden transform rotate-[-3deg] hover:rotate-0 transition-transform duration-500 ml-10" vid="39">
                         
-                        <div class="bg-gray-50 h-[480px] p-5 flex flex-col pt-12 font-sans" vid="40">
+                        <div class="bg-gray-50 h-[360px] sm:h-[420px] lg:h-[480px] p-4 sm:p-5 flex flex-col pt-10 sm:pt-12 font-sans" vid="40">
                             
                             <div class="bg-white p-4 rounded-xl rounded-tl-sm shadow-sm mb-4 text-xs border border-gray-100" vid="41">
                                 <strong class="block mb-1 text-gray-900 font-bold" vid="42">New Review (3/5):</strong> 
@@ -229,11 +247,11 @@
                 </div>
 
                 
-                <div class="absolute top-10 left-10 bg-white p-4 rounded-xl shadow-xl animate-float z-20 border border-gray-100" vid="47">
+                <div class="absolute top-10 left-10 bg-white p-4 rounded-xl shadow-xl animate-float z-20 border border-gray-100 hidden sm:block" vid="47">
                     <div class="flex text-brand-orange text-xl tracking-widest" vid="48">★★★★★</div>
                 </div>
                 
-                <div class="absolute bottom-20 right-0 bg-gray-900 text-white px-6 py-3 rounded-lg shadow-xl animate-float-delayed z-20 font-display font-bold text-sm tracking-wide" vid="49">
+                <div class="absolute bottom-20 right-0 bg-gray-900 text-white px-6 py-3 rounded-lg shadow-xl animate-float-delayed z-20 font-display font-bold text-sm tracking-wide hidden sm:block" vid="49">
                     APPROVED VIA SMS
                 </div>
             </div>
@@ -249,15 +267,15 @@
                 <p class="text-lg text-gray-500 max-w-2xl mx-auto text-body" vid="55">Simple, silent, and smart. We handle the noise so you can handle the kitchen.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8" vid="56">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8" vid="56">
                 
                 
-                <div class="glass-card p-10 group" vid="57">
+                <div class="glass-card p-6 sm:p-8 md:p-10 group" vid="57">
                     <div class="w-16 h-16 bg-brand-orange rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300" vid="58">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20" vid="59"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" vid="60"></path></svg>
                     </div>
                     <h3 class="text-2xl mb-4 text-gray-900" vid="61">Positive Reviews</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6 font-light" vid="62">
+                    <p class="text-gray-500 text-sm sm:text-base leading-relaxed mb-6 font-light" vid="62">
                         5-star reviews are handled silently. Our AI writes personalized "Thank You" notes and posts them instantly to Google &amp; Yelp.
                     </p>
                     <div class="bg-gray-50 rounded-lg p-3 text-xs text-gray-600 border border-gray-200 font-mono" vid="63">
@@ -266,12 +284,12 @@
                 </div>
 
 
-                <div class="glass-card p-10 relative overflow-hidden group" vid="64">
+                <div class="glass-card p-6 sm:p-8 md:p-10 relative overflow-hidden group" vid="64">
                     <div class="w-16 h-16 bg-brand-orange rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300" vid="65">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20" vid="66"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" vid="67"></path></svg>
                     </div>
                     <h3 class="text-2xl mb-4 text-gray-900" vid="68">Negative Reviews</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6 font-light" vid="69">
+                    <p class="text-gray-500 text-sm sm:text-base leading-relaxed mb-6 font-light" vid="69">
                         Criticism requires a human touch. We draft a diplomatic response and text it to you. You approve or edit via SMS.
                     </p>
                     <div class="bg-gray-50 rounded-lg p-3 text-xs text-gray-600 border border-gray-200 font-mono" vid="70">
@@ -280,12 +298,12 @@
                 </div>
 
 
-                <div class="glass-card p-10 group" vid="72">
+                <div class="glass-card p-6 sm:p-8 md:p-10 group" vid="72">
                     <div class="w-16 h-16 bg-brand-orange rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300" vid="73">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20" vid="74"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" vid="75"></path></svg>
                     </div>
                     <h3 class="text-2xl mb-4 text-gray-900" vid="76">Weekly Intel</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6 font-light" vid="77">
+                    <p class="text-gray-500 text-sm sm:text-base leading-relaxed mb-6 font-light" vid="77">
                         Every Sunday, receive a digest. Staff shoutouts, recurring complaints, and competitor movement in your area.
                     </p>
                     <div class="bg-gray-50 rounded-lg p-3 text-xs text-gray-600 border border-gray-200 font-mono" vid="78">
@@ -350,7 +368,7 @@
                     </div>
 
                     
-                    <div class="absolute -bottom-10 -left-4 bg-white p-4 rounded-lg shadow-2xl max-w-xs z-20 border-l-4 border-green-500 animate-float-delayed" vid="113">
+                    <div class="absolute -bottom-10 -left-4 bg-white p-4 rounded-lg shadow-2xl max-w-xs z-20 border-l-4 border-green-500 animate-float-delayed hidden sm:block" vid="113">
                         <div class="flex items-center gap-3 mb-2" vid="114">
                             <div class="w-6 h-6 rounded bg-green-500 flex items-center justify-center text-white text-[10px]" vid="115">💬</div>
                             <div class="text-[10px] font-bold text-gray-400 tracking-widest uppercase" vid="116">Messages • Now</div>
@@ -361,14 +379,14 @@
 
                 
                 <div class="space-y-8 bg-white p-8 lg:p-12 rounded-3xl shadow-soft" vid="119">
-                    <h2 class="text-5xl text-gray-900 leading-[0.9] font-black tracking-tight" vid="120">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl text-gray-900 leading-[0.9] font-black tracking-tight" vid="120">
                         Sunday Morning <br vid="121">
                         <span class="text-brand-orange" vid="122">Intelligence.</span>
                     </h2>
                     <p class="text-lg text-gray-500 text-body font-light" vid="123">
                         No logins. No complex dashboards. We send the data where you already are: your inbox and your text messages.
                     </p>
-                    <ul class="space-y-4 pt-4" vid="124">
+                    <ul class="space-y-5 sm:space-y-6 pt-4" vid="124">
                         <li class="flex items-start gap-4 group" vid="125">
                             <span class="w-8 h-8 rounded-lg bg-brand-orange flex items-center justify-center text-white text-xs font-bold group-hover:scale-110 transition-transform shrink-0" vid="126">✓</span>
                             <div vid="127">
@@ -413,12 +431,12 @@
     
     <section class="py-24 bg-white" vid="150">
         <div class="max-w-7xl mx-auto px-6 text-center" vid="151">
-            <h2 class="text-4xl mb-16 font-display font-black tracking-tight" vid="152">Stop Managing Dashboards</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl mb-12 sm:mb-16 font-display font-black tracking-tight" vid="152">Stop Managing Dashboards</h2>
             
-            <div class="flex flex-col md:flex-row items-center justify-center gap-12" vid="153">
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12" vid="153">
                 
                 
-                <div class="w-full md:w-1/2 opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" vid="154">
+                <div class="w-full lg:w-1/2 opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" vid="154">
                     <div class="bg-gray-50 rounded-lg border border-gray-200 p-3 shadow-inner" vid="155">
                         <!-- Header bar -->
                         <div class="bg-gray-800 h-8 rounded-t flex items-center px-3 gap-1 mb-2" vid="156">
@@ -515,12 +533,12 @@
                 </div>
 
                 
-                <div class="w-16 h-16 rounded-full bg-gray-900 text-white flex items-center justify-center font-display text-xl font-black z-10 shrink-0 border-4 border-white shadow-xl" vid="218">
+                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gray-900 text-white flex items-center justify-center font-display text-lg sm:text-xl font-black z-10 shrink-0 border-4 border-white shadow-xl" vid="218">
                     VS
                 </div>
 
                 
-                <div class="w-full md:w-1/2" vid="219">
+                <div class="w-full lg:w-1/2" vid="219">
                     <div class="relative w-full max-w-4xl mx-auto flex items-start justify-center gap-6" vid="220">
                         <!-- iPhone SMS Sample with floating style -->
                         <div class="relative w-[240px] bg-white rounded-[2.5rem] shadow-2xl border-[6px] border-gray-900 overflow-hidden transform -rotate-2 hover:rotate-0 transition-all duration-500 z-20" vid="221">
@@ -572,56 +590,56 @@
     
     <section class="py-24 bg-gray-50" vid="243">
         <div class="max-w-7xl mx-auto px-6" vid="244">
-            <h2 class="text-4xl text-center mb-16 font-display font-black" vid="245">Everything You Need to Dominate Your Local Market</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl text-center mb-12 sm:mb-16 font-display font-black" vid="245">Everything You Need to Dominate Your Local Market</h2>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto" vid="246">
-                <div class="glass-card p-6 text-left" vid="247">
-                    <svg class="w-10 h-10 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="248"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" vid="249"></path><path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" vid="250"></path></svg>
-                    <h4 class="font-bold text-gray-900 mb-2 text-sm" vid="251">Human-Tone AI (Not Robotic)</h4>
-                    <p class="text-xs text-gray-600 mb-3" vid="252">Not robotic - sounds like YOU. Learns your restaurant's voice. Matches your tone (casual, formal, friendly).</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto" vid="246">
+                <div class="glass-card p-6 sm:p-8 text-left" vid="247">
+                    <svg class="w-12 h-12 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="248"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" vid="249"></path><path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" vid="250"></path></svg>
+                    <h4 class="font-bold text-gray-900 mb-2 text-base" vid="251">Human-Tone AI (Not Robotic)</h4>
+                    <p class="text-sm text-gray-600 mb-3" vid="252">Not robotic - sounds like YOU. Learns your restaurant's voice. Matches your tone (casual, formal, friendly).</p>
                     <div class="text-[10px] text-gray-500 bg-gray-50 p-2 rounded border-l-2 border-green-500" vid="253"><strong class="text-green-700" vid="254">✓</strong> "Thanks for the love, Sarah! Maria will be thrilled."</div>
                     <div class="text-[10px] text-gray-400 bg-gray-50 p-2 rounded border-l-2 border-red-300 mt-1" vid="255"><strong class="text-red-500" vid="256">✗</strong> "Thank you for your feedback. We appreciate your patronage."</div>
                 </div>
-                <div class="glass-card p-6 text-left" vid="257">
-                    <svg class="w-10 h-10 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="258"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" vid="259"></path></svg>
-                    <h4 class="font-bold text-gray-900 mb-2 text-sm" vid="260">SMS Approval (You Stay In Control)</h4>
-                    <p class="text-xs text-gray-600 mb-3" vid="261">YOU stay in control. See draft before it posts. Edit via text if needed. Catch issues before they're public. Reply YES to approve in 5 seconds.</p>
+                <div class="glass-card p-6 sm:p-8 text-left" vid="257">
+                    <svg class="w-12 h-12 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="258"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" vid="259"></path></svg>
+                    <h4 class="font-bold text-gray-900 mb-2 text-base" vid="260">SMS Approval (You Stay In Control)</h4>
+                    <p class="text-sm text-gray-600 mb-3" vid="261">YOU stay in control. See draft before it posts. Edit via text if needed. Catch issues before they're public. Reply YES to approve in 5 seconds.</p>
                     <div class="text-[10px] font-semibold text-green-700 bg-green-50 p-2 rounded" vid="262">✓ Never worry about AI saying the wrong thing</div>
                 </div>
-                <div class="glass-card p-6 text-left" vid="263">
-                    <svg class="w-10 h-10 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="264"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd" vid="265"></path></svg>
-                    <h4 class="font-bold text-gray-900 mb-2 text-sm" vid="266">Competitor Tracking (5-Mile Radius)</h4>
-                    <p class="text-xs text-gray-600 mb-3" vid="267">AI identifies similar restaurants nearby. Tracks review growth weekly. Highlights threats (200% spikes). Shows YOUR position vs rivals.</p>
+                <div class="glass-card p-6 sm:p-8 text-left" vid="263">
+                    <svg class="w-12 h-12 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="264"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd" vid="265"></path></svg>
+                    <h4 class="font-bold text-gray-900 mb-2 text-base" vid="266">Competitor Tracking (5-Mile Radius)</h4>
+                    <p class="text-sm text-gray-600 mb-3" vid="267">AI identifies similar restaurants nearby. Tracks review growth weekly. Highlights threats (200% spikes). Shows YOUR position vs rivals.</p>
                     <div class="text-[10px] font-semibold text-purple-700 bg-purple-50 p-2 rounded" vid="268">✓ See opportunities and threats before your competitors do</div>
                 </div>
-                <div class="glass-card p-6 text-left" vid="269">
-                    <svg class="w-10 h-10 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="270"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" vid="271"></path></svg>
-                    <h4 class="font-bold text-gray-900 mb-2 text-sm" vid="272">Crisis Mode</h4>
-                    <p class="text-xs text-gray-600 mb-3" vid="273">2+ negatives in 24 hours = urgent alert. Real-time operational intel. "Something's wrong tonight". Fix problems immediately.</p>
+                <div class="glass-card p-6 sm:p-8 text-left" vid="269">
+                    <svg class="w-12 h-12 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="270"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" vid="271"></path></svg>
+                    <h4 class="font-bold text-gray-900 mb-2 text-base" vid="272">Crisis Mode</h4>
+                    <p class="text-sm text-gray-600 mb-3" vid="273">2+ negatives in 24 hours = urgent alert. Real-time operational intel. "Something's wrong tonight". Fix problems immediately.</p>
                     <div class="text-[10px] font-semibold text-red-700 bg-red-50 p-2 rounded" vid="274">✓ Catch bad nights BEFORE they ruin your month</div>
                 </div>
-                <div class="glass-card p-6 text-left" vid="275">
-                    <svg class="w-10 h-10 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="276"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" vid="277"></path></svg>
-                    <h4 class="font-bold text-gray-900 mb-2 text-sm" vid="278">Pattern Detection</h4>
-                    <p class="text-xs text-gray-600 mb-3" vid="279">Flags recurring complaints. "3x mentioned slow service this week". Prevent ratings damage. Fix operational issues early.</p>
+                <div class="glass-card p-6 sm:p-8 text-left" vid="275">
+                    <svg class="w-12 h-12 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="276"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" vid="277"></path></svg>
+                    <h4 class="font-bold text-gray-900 mb-2 text-base" vid="278">Pattern Detection</h4>
+                    <p class="text-sm text-gray-600 mb-3" vid="279">Flags recurring complaints. "3x mentioned slow service this week". Prevent ratings damage. Fix operational issues early.</p>
                     <div class="text-[10px] text-gray-500 italic bg-gray-50 p-2 rounded" vid="280">Example: If 3 people mention "cold food" in a week, you know your heat lamps aren't working.</div>
                 </div>
-                <div class="glass-card p-6 text-left" vid="281">
-                    <svg class="w-10 h-10 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="282"><path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" vid="283"></path></svg>
-                    <h4 class="font-bold text-gray-900 mb-2 text-sm" vid="284">Staff Shoutouts</h4>
-                    <p class="text-xs text-gray-600 mb-3" vid="285">Tracks name mentions in reviews. "Maria mentioned 5x this week". Boost team morale. Recognize top performers. Data-driven employee recognition.</p>
+                <div class="glass-card p-6 sm:p-8 text-left" vid="281">
+                    <svg class="w-12 h-12 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="282"><path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" vid="283"></path></svg>
+                    <h4 class="font-bold text-gray-900 mb-2 text-base" vid="284">Staff Shoutouts</h4>
+                    <p class="text-sm text-gray-600 mb-3" vid="285">Tracks name mentions in reviews. "Maria mentioned 5x this week". Boost team morale. Recognize top performers. Data-driven employee recognition.</p>
                     <div class="text-[10px] font-semibold text-blue-700 bg-blue-50 p-2 rounded" vid="286">✓ Your team LOVES seeing real customer praise</div>
                 </div>
-                <div class="glass-card p-6 text-left" vid="287">
-                    <svg class="w-10 h-10 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="288"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" vid="289"></path></svg>
-                    <h4 class="font-bold text-gray-900 mb-2 text-sm" vid="290">Photo Alerts</h4>
-                    <p class="text-xs text-gray-600 mb-3" vid="291">Flags reviews with images. Shows what dishes photograph well. Free marketing content. Repost opportunities to Instagram/Facebook.</p>
+                <div class="glass-card p-6 sm:p-8 text-left" vid="287">
+                    <svg class="w-12 h-12 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="288"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" vid="289"></path></svg>
+                    <h4 class="font-bold text-gray-900 mb-2 text-base" vid="290">Photo Alerts</h4>
+                    <p class="text-sm text-gray-600 mb-3" vid="291">Flags reviews with images. Shows what dishes photograph well. Free marketing content. Repost opportunities to Instagram/Facebook.</p>
                     <div class="text-[10px] font-semibold text-pink-700 bg-pink-50 p-2 rounded" vid="292">✓ Turn customer photos into free marketing</div>
                 </div>
-                <div class="glass-card p-6 text-left" vid="293">
-                    <svg class="w-10 h-10 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="294"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" vid="295"></path></svg>
-                    <h4 class="font-bold text-gray-900 mb-2 text-sm" vid="296">Ranking Tracker</h4>
-                    <p class="text-xs text-gray-600 mb-3" vid="297">Monthly Google Maps position tracking. "#3 for Italian restaurant [city]". Proves ReviewReply ROI. Track improvement over time.</p>
+                <div class="glass-card p-6 sm:p-8 text-left" vid="293">
+                    <svg class="w-12 h-12 text-brand-orange mb-4" fill="currentColor" viewBox="0 0 20 20" vid="294"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" vid="295"></path></svg>
+                    <h4 class="font-bold text-gray-900 mb-2 text-base" vid="296">Ranking Tracker</h4>
+                    <p class="text-sm text-gray-600 mb-3" vid="297">Monthly Google Maps position tracking. "#3 for Italian restaurant [city]". Proves ReviewReply ROI. Track improvement over time.</p>
                     <div class="text-[10px] font-semibold text-indigo-700 bg-indigo-50 p-2 rounded" vid="298">✓ See exactly how fast responses improve your SEO</div>
                 </div>
             </div>
@@ -632,9 +650,9 @@
     <section class="py-24 bg-white relative" vid="299">
         <div class="absolute inset-0 bg-citrus-gradient opacity-50" vid="300"></div>
         <div class="max-w-4xl mx-auto px-6 text-center relative z-10" vid="301">
-            <div class="bg-white rounded-[2rem] p-16 shadow-2xl border border-gray-100" vid="302">
+            <div class="bg-white rounded-[2rem] p-8 sm:p-12 md:p-16 shadow-2xl border border-gray-100" vid="302">
                 <div class="inline-block bg-brand-orange text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6" vid="303">Subscription</div>
-                <h2 class="text-6xl mb-6 font-black font-display text-gray-900" vid="304">$99/month per location</h2>
+                <h2 class="text-4xl sm:text-5xl md:text-6xl mb-6 font-black font-display text-gray-900" vid="304">$99/month per location</h2>
                 
                 <div class="max-w-md mx-auto mb-8 text-gray-500 text-body" vid="305">
                     Includes all features and 24/7 AI response generation.
@@ -651,25 +669,25 @@
     
     <section class="py-24 bg-white overflow-hidden" vid="308">
         <div class="max-w-7xl mx-auto px-6" vid="309">
-            <h2 class="text-4xl text-center mb-20 font-display font-black" vid="310">Trusted by restaurant owners nationwide</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl text-center mb-12 sm:mb-20 font-display font-black" vid="310">Trusted by restaurant owners nationwide</h2>
             
-            <div class="grid md:grid-cols-3 gap-12" vid="311">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12" vid="311">
                 
                 <div class="text-center group p-6 border border-transparent hover:border-gray-100 hover:shadow-lg rounded-2xl transition-all" vid="312">
                     <div class="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg mb-6 border-4 border-white ring-4 ring-gray-50 group-hover:ring-brand-orange transition-all duration-500" vid="313">
                         <img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=800&amp;h=800&amp;fit=crop" alt="Maria" class="w-full h-full object-cover" vid="314">
                     </div>
-                    <p class="text-gray-600 mb-6 px-2 text-sm italic font-medium" vid="315">"ReviewReply handles our reviews so I can focus on running my restaurant."</p>
+                    <p class="text-gray-600 mb-6 px-2 text-base italic font-medium" vid="315">"ReviewReply handles our reviews so I can focus on running my restaurant."</p>
                     <h4 class="font-bold text-gray-900 uppercase tracking-wider text-sm" vid="316">Maria R.</h4>
                     <span class="text-[10px] text-brand-orange font-bold uppercase tracking-widest" vid="317">Bella Bistro</span>
                 </div>
 
                 
-                <div class="text-center group p-6 border border-transparent hover:border-gray-100 hover:shadow-lg rounded-2xl transition-all relative top-8 md:top-0" vid="318">
+                <div class="text-center group p-6 border border-transparent hover:border-gray-100 hover:shadow-lg rounded-2xl transition-all relative md:top-8 lg:top-0" vid="318">
                     <div class="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg mb-6 border-4 border-white ring-4 ring-gray-50 group-hover:ring-brand-orange transition-all duration-500" vid="319">
                         <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&amp;h=800&amp;fit=crop" alt="Carlos" class="w-full h-full object-cover" vid="320">
                     </div>
-                    <p class="text-gray-600 mb-6 px-2 text-sm italic font-medium" vid="321">"The AI sounds exactly like me. Professional but warm. It handles the Karens so I don't have to."</p>
+                    <p class="text-gray-600 mb-6 px-2 text-base italic font-medium" vid="321">"The AI sounds exactly like me. Professional but warm. It handles the Karens so I don't have to."</p>
                     <h4 class="font-bold text-gray-900 uppercase tracking-wider text-sm" vid="322">Carlos T.</h4>
                     <span class="text-[10px] text-brand-orange font-bold uppercase tracking-widest" vid="323">Taco &amp; Tequila</span>
                 </div>
@@ -679,7 +697,7 @@
                     <div class="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg mb-6 border-4 border-white ring-4 ring-gray-50 group-hover:ring-brand-orange transition-all duration-500" vid="325">
                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&amp;h=800&amp;fit=crop" alt="Sarah" class="w-full h-full object-cover" vid="326">
                     </div>
-                    <p class="text-gray-600 mb-6 px-2 text-sm italic font-medium" vid="327">"The competitor intel is scary good. I knew Sally's was launching a new menu before they announced it."</p>
+                    <p class="text-gray-600 mb-6 px-2 text-base italic font-medium" vid="327">"The competitor intel is scary good. I knew Sally's was launching a new menu before they announced it."</p>
                     <h4 class="font-bold text-gray-900 uppercase tracking-wider text-sm" vid="328">Sarah L.</h4>
                     <span class="text-[10px] text-brand-orange font-bold uppercase tracking-widest" vid="329">The Daily Grind</span>
                 </div>
@@ -690,35 +708,35 @@
     
     <section class="py-24 bg-brand-mint/50" vid="330">
         <div class="max-w-3xl mx-auto px-6" vid="331">
-            <h2 class="text-4xl text-center mb-16 font-display font-black text-gray-900" vid="332">Common Questions</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl text-center mb-12 sm:mb-16 font-display font-black text-gray-900" vid="332">Common Questions</h2>
             <div class="space-y-4" vid="333">
                 <details class="group bg-white rounded-lg p-6 shadow-sm cursor-pointer border-l-4 border-transparent hover:border-brand-orange transition-all" vid="334">
                     <summary class="font-bold text-gray-900 list-none flex justify-between items-center text-lg" vid="335">
                         Does the AI sound like a robot?
                         <span class="transform group-open:rotate-180 transition-transform text-brand-orange" vid="336">↓</span>
                     </summary>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4" vid="337">Not at all. We train the model on your previous 50 responses so it learns your unique voice, tone, and vocabulary.</p>
+                    <p class="mt-4 text-gray-600 text-base leading-relaxed border-t border-gray-100 pt-4" vid="337">Not at all. We train the model on your previous 50 responses so it learns your unique voice, tone, and vocabulary.</p>
                 </details>
                 <details class="group bg-white rounded-lg p-6 shadow-sm cursor-pointer border-l-4 border-transparent hover:border-brand-orange transition-all" vid="338">
                     <summary class="font-bold text-gray-900 list-none flex justify-between items-center text-lg" vid="339">
                         Can I edit the responses?
                         <span class="transform group-open:rotate-180 transition-transform text-brand-orange" vid="340">↓</span>
                     </summary>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4" vid="341">Yes. For sensitive (negative) reviews, we text you a draft. You can reply with "Edit" to rewrite it entirely or tweak the tone.</p>
+                    <p class="mt-4 text-gray-600 text-base leading-relaxed border-t border-gray-100 pt-4" vid="341">Yes. For sensitive (negative) reviews, we text you a draft. You can reply with "Edit" to rewrite it entirely or tweak the tone.</p>
                 </details>
                 <details class="group bg-white rounded-lg p-6 shadow-sm cursor-pointer border-l-4 border-transparent hover:border-brand-orange transition-all" vid="342">
                     <summary class="font-bold text-gray-900 list-none flex justify-between items-center text-lg" vid="343">
                         Which platforms do you support?
                         <span class="transform group-open:rotate-180 transition-transform text-brand-orange" vid="344">↓</span>
                     </summary>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4" vid="345">We currently support Google Maps, Yelp, TripAdvisor, and OpenTable.</p>
+                    <p class="mt-4 text-gray-600 text-base leading-relaxed border-t border-gray-100 pt-4" vid="345">We currently support Google Maps, Yelp, TripAdvisor, and OpenTable.</p>
                 </details>
                  <details class="group bg-white rounded-lg p-6 shadow-sm cursor-pointer border-l-4 border-transparent hover:border-brand-orange transition-all" vid="346">
                     <summary class="font-bold text-gray-900 list-none flex justify-between items-center text-lg" vid="347">
                         Is there a contract?
                         <span class="transform group-open:rotate-180 transition-transform text-brand-orange" vid="348">↓</span>
                     </summary>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4" vid="349">No. ReviewReply is month-to-month. You can cancel anytime with one click.</p>
+                    <p class="mt-4 text-gray-600 text-base leading-relaxed border-t border-gray-100 pt-4" vid="349">No. ReviewReply is month-to-month. You can cancel anytime with one click.</p>
                 </details>
             </div>
         </div>
@@ -727,7 +745,7 @@
     
     <section class="py-24 bg-white text-center relative overflow-hidden" vid="350">
         <div class="max-w-4xl mx-auto px-6 relative z-10" vid="351">
-            <h2 class="text-6xl md:text-7xl mb-8 text-gray-900 font-black font-display tracking-tight" vid="352">Take back your <br vid="353"> <span class="text-brand-orange" vid="354">Sunday nights.</span></h2>
+            <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-8 text-gray-900 font-black font-display tracking-tight" vid="352">Take back your <br vid="353"> <span class="text-brand-orange" vid="354">Sunday nights.</span></h2>
             <p class="text-xl text-gray-500 mb-12 max-w-2xl mx-auto font-light" vid="355">Join 500+ restaurants automating their reputation management.</p>
             <button class="btn-primary text-xl px-16 py-6 shadow-2xl" vid="356">
                 Start Your Free Trial
@@ -742,7 +760,7 @@
 
     
     <footer class="bg-gray-50 py-16 border-t border-gray-200" vid="359">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 text-sm" vid="360">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 text-sm" vid="360">
             <div class="space-y-6" vid="361">
                 <div class="flex items-center gap-2" vid="362">
                     <div class="w-8 h-8 rounded bg-brand-orange flex items-center justify-center text-white font-display text-lg font-black shadow-sm" vid="363">R</div>
